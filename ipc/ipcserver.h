@@ -42,6 +42,8 @@ public:
     virtual bool disableKillSwitch() override;
     virtual bool refreshKillSwitch( bool enabled ) override;
     virtual bool updateResolvers(const QString& ifname, const QList<QHostAddress>& resolvers) override;
+    virtual void xrayStart(const QString& cfg) override;
+    virtual void xrayStop() override;
 
 private:
     int m_localpid = 0;
