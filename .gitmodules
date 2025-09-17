@@ -6,8 +6,8 @@
 	url = https://github.com/mitchcurtis/SortFilterProxyModel.git
 [submodule "client/3rd-prebuilt"]
 	path = client/3rd-prebuilt
-	url = https://github.com/amnezia-vpn/3rd-prebuilt
-	branch = feature/special-handshake
+	url = https://github.com/v-barkanov/3rd-prebuilt
+	branch = feature/upd-openvpn-binaries
 [submodule "client/3rd/amneziawg-apple"]
 	path = client/3rd/amneziawg-apple
 	url = https://github.com/amnezia-vpn/amneziawg-apple
