@@ -1,6 +1,6 @@
 # Amnezia VPN
 
-### _The best client for self-hosted VPN_
+### __The best client for self-hosted VPN__
 
 
 [![Build Status](https://github.com/amnezia-vpn/amnezia-client/actions/workflows/deploy.yml/badge.svg?branch=dev)](https://github.com/amnezia-vpn/amnezia-client/actions/workflows/deploy.yml?query=branch:dev)
@@ -40,10 +40,10 @@
 
 - [https://amnezia.org](https://amnezia.org) - Project website | [Alternative link (mirror)](https://storage.googleapis.com/kldscp/amnezia.org)
 - [https://docs.amnezia.org](https://docs.amnezia.org) - Documentation
-- [https://www.reddit.com/r/AmneziaVPN](https://www.reddit.com/r/AmneziaVPN) - Reddit  
-- [https://t.me/amnezia_vpn_en](https://t.me/amnezia_vpn_en) - Telegram support channel (English) 
-- [https://t.me/amnezia_vpn_ir](https://t.me/amnezia_vpn_ir) - Telegram support channel (Farsi) 
-- [https://t.me/amnezia_vpn_mm](https://t.me/amnezia_vpn_mm) - Telegram support channel (Myanmar)  
+- [https://www.reddit.com/r/AmneziaVPN](https://www.reddit.com/r/AmneziaVPN) - Reddit
+- [https://t.me/amnezia_vpn_en](https://t.me/amnezia_vpn_en) - Telegram support channel (English)
+- [https://t.me/amnezia_vpn_ir](https://t.me/amnezia_vpn_ir) - Telegram support channel (Farsi)
+- [https://t.me/amnezia_vpn_mm](https://t.me/amnezia_vpn_mm) - Telegram support channel (Myanmar)
 - [https://t.me/amnezia_vpn](https://t.me/amnezia_vpn) - Telegram support channel (Russian)
 - [https://vpnpay.io/en/amnezia-premium/](https://vpnpay.io/en/amnezia-premium/) - Amnezia Premium
 
@@ -85,7 +85,7 @@ You can do it via a web-interface or any other method you're familiar with.
 
 ### Building sources and deployment
 
-Check deploy folder for build scripts. 
+Check deploy folder for build scripts.
 
 ### How to build an iOS app from source code on MacOS
 
@@ -99,12 +99,12 @@ Check deploy folder for build scripts.
    - Additional Libraries:
      - Qt Image Formats
      - Qt Multimedia
-     - Qt Remote Objects 
+     - Qt Remote Objects
 
 3. Install CMake if required. We recommend CMake version 3.25. You can install CMake [here](https://cmake.org/download/)
 
 4. You also need to install go >= v1.16. If you don't have it installed already,
-download go from the [official website](https://golang.org/dl/) or use Homebrew. 
+download go from the [official website](https://golang.org/dl/) or use Homebrew.
 The latest version is recommended. Install gomobile
 ```bash
 export PATH=$PATH:~/go/bin
@@ -124,7 +124,7 @@ $QT_IOS_BIN/qt-cmake . -B build-ios -GXcode -DQT_HOST_PATH=$QT_MACOS_ROOT_DIR
 Replace PATH-TO-QT-FOLDER and QT-VERSION to your environment
 
 
-If you get `gomobile: command not found` make sure to set PATH to the location 
+If you get `gomobile: command not found` make sure to set PATH to the location
 of the bin folder where gomobile was installed. Usually, it's in `GOPATH`.
 ```bash
 export PATH=$(PATH):/path/to/GOPATH/bin
@@ -134,14 +134,14 @@ export PATH=$(PATH):/path/to/GOPATH/bin
 
 If the build fails with the following error
 ```
-make: *** 
-[$(PROJECTDIR)/client/build/AmneziaVPN.build/Debug-iphoneos/wireguard-go-bridge/goroot/.prepared] 
+make: ***
+[$(PROJECTDIR)/client/build/AmneziaVPN.build/Debug-iphoneos/wireguard-go-bridge/goroot/.prepared]
 Error 1
 ```
 Add a user-defined variable to both AmneziaVPN and WireGuardNetworkExtension targets' build settings with
 key `PATH` and value `${PATH}/path/to/bin/folder/with/go/executable`, e.g. `${PATH}:/usr/local/go/bin`.
 
-if the above error persists on your M1 Mac, then most probably you need to install arch based CMake 
+if the above error persists on your M1 Mac, then most probably you need to install arch based CMake
 ```
 arch -arm64 brew install cmake
 ```
@@ -188,7 +188,7 @@ Patreon: [https://www.patreon.com/amneziavpn](https://www.patreon.com/amneziavpn
 Bitcoin: bc1qmhtgcf9637rl3kqyy22r2a8wa8laka4t9rx2mf <br>
 USDT BEP20: 0x6abD576765a826f87D1D95183438f9408C901bE4 <br>
 USDT TRC20: TELAitazF1MZGmiNjTcnxDjEiH5oe7LC9d <br>
-XMR: 48spms39jt1L2L5vyw2RQW6CXD6odUd4jFu19GZcDyKKQV9U88wsJVjSbL4CfRys37jVMdoaWVPSvezCQPhHXUW5UKLqUp3 <br> 
+XMR: 48spms39jt1L2L5vyw2RQW6CXD6odUd4jFu19GZcDyKKQV9U88wsJVjSbL4CfRys37jVMdoaWVPSvezCQPhHXUW5UKLqUp3 <br>
 TON: UQDpU1CyKRmg7L8mNScKk9FRc2SlESuI7N-Hby4nX-CcVmns
 ## Acknowledgments
 
